@@ -12,6 +12,75 @@ body {
 	height: 100vh;
 }
 
+#text-container p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.rainbow-text {
+  font-size: 36px;
+  font-weight: bold;
+  animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #f00;
+  }
+  10% {
+    color: #ff0;
+  }
+  20% {
+    color: #0f0;
+  }
+  30% {
+    color: #0ff;
+  }
+  40% {
+    color: #00f;
+  }
+  50% {
+    color: #f0f;
+  }
+  60% {
+    color: #f00;
+  }
+  70% {
+    color: #ff0;
+  }
+  80% {
+    color: #0f0;
+  }
+  90% {
+    color: #0ff;
+  }
+  100% {
+    color: #00f;
+  }
+}
+
+.fade {
+  transition: color 2s;
+  color: #f00;
+}
+
+.rainbow-text:hover {
+  animation: none;
+  animation-fill-mode: forwards;
+  animation-name: fade;
+}
+
+.rainbow-text:hover .fade {
+  color: #0f0;
+}
+
+
 .container {
 	position: absolute;
 	top: 50%;
