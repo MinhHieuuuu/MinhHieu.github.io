@@ -6,10 +6,64 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url(https://cdn.discordapp.com/attachments/1012011940219986001/1094989927231533086/IMG_123.jpg);
+	background-image: url(https://media.discordapp.net/attachments/1012011940219986001/1097579733765603338/202302.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+}
+
+.avatar {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-image: url('https://cdn.discordapp.com/attachments/1012011940219986001/1097581343585607780/logonew.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.avatar:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.typewriter h3 {
+  color: black;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* Animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Delay for Slow Typing */
+.typewriter h3 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+  animation-iteration-count: infinite; /* Lặp vô hạn */
 }
 
 
@@ -72,18 +126,20 @@ body {
 
 
 .container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  display: flex; /* thêm vào đây */
+  flex-direction: column; /* và thêm vào đây */
 }
 
 h1, h2 {
