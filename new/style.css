@@ -1,8 +1,10 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -11,6 +13,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 }
+
 
 .avatar {
   text-align: center;
@@ -22,6 +25,7 @@ body {
   background-size: cover;
   background-position: center;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+max-width: 100%;
 }
 
 .avatar:hover {
@@ -163,3 +167,5 @@ h1, h2 {
       color: #007bff;
       transform: scale(1.1);
     }
+
+
