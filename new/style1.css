@@ -1,16 +1,19 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
+
 body {
-  font-family: 'Roboto', sans-serif;
-  background-image: url(https://media.discordapp.net/attachments/1012011940219986001/1097579733765603338/202302.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	background-image: url(https://media.discordapp.net/attachments/1012011940219986001/1097579733765603338/202302.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
 }
+
 
 .avatar {
   text-align: center;
@@ -22,12 +25,16 @@ body {
   background-size: cover;
   background-position: center;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+max-width: 100%;
 }
 
 .avatar:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 .typewriter h3 {
   color: black;
@@ -42,21 +49,13 @@ body {
 
 /* Animation */
 @keyframes typing {
-  from {
-    width: 0
-  }
-  to {
-    width: 100%
-  }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @keyframes blink-caret {
-  from, to {
-    border-color: transparent
-  }
-  50% {
-    border-color: orange;
-  }
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 /* Delay for Slow Typing */
@@ -68,9 +67,9 @@ body {
   animation:
     typing 3.5s steps(30, end),
     blink-caret .75s step-end infinite;
-  animation-iteration-count: infinite;
-  /* Lặp vô hạn */
+  animation-iteration-count: infinite; /* Lặp vô hạn */
 }
+
 
 .rainbow-text {
   font-size: 36px;
@@ -129,6 +128,7 @@ body {
   color: #0f0;
 }
 
+
 .container {
   position: absolute;
   top: 50%;
@@ -151,19 +151,21 @@ h1, h2 {
 	margin-bottom: 10px;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.social-icons a {
-  display: inline-block;
-  margin: 0px 10px;
-  font-size: 2rem;
-  color: #333;
-  transition: all 0.3s ease-in-out;
-}
-.social-icons a:hover {
-  color: #007bff;
-  transform: scale(1.1);
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0px 10px;
+      font-size: 2rem;
+      color: #333;
+      transition: all 0.3s ease-in-out;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+      transform: scale(1.1);
+    }
+
+
