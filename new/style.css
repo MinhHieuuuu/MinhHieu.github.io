@@ -9,6 +9,7 @@ body {
   background-image: url(https://media.discordapp.net/attachments/1012011940219986001/1097579733765603338/202302.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
 }
 
