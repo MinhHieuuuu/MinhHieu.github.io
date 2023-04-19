@@ -27,8 +27,29 @@ body {
 
 .avatar:hover {
   transform: translateY(-10px);
+  border: 3px solid #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-image: url('https://media.discordapp.net/attachments/1012011940219986001/1098253005473710160/20220528_021002421_iOS.jpg'); /* Đổi đường dẫn ảnh khác tại đây */
 }
+
+.avatar:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://cdn.discordapp.com/attachments/1012011940219986001/1097581343585607780/logonew.png'); /* Đổi đường dẫn ảnh cũ tại đây */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.avatar:hover::after:hover {
+  opacity: 1;
+}
+
 
 .typewriter h3 {
   color: black;
@@ -168,3 +189,40 @@ h1, h2 {
   color: #007bff;
   transform: scale(1.1);
 }
+
+ #animation  {
+        background-image: url("ciclo-animacao.png");
+        width: 58px;
+        height: 87px;
+        -webkit-animation: ciclo-animacao 1.0s steps(8) infinite;
+        animation: ciclo-animacao 1.0s steps(8) infinite;
+      }
+
+      @-webkit-keyframes ciclo-animacao {
+        from { background-position: 0px; }
+        to { background-position: -464px; }
+      }
+
+      @Keyframes ciclo-animacao {
+        from { background-position: 0px; }
+        to { background-position: -464px; }
+      }
+
+#animation1  {
+        background-image: url("ciclo-animacao.png");
+        transform: scaleX(-1);
+        width: 58px;
+        height: 87px;
+        -webkit-animation: ciclo-animacao 1.0s steps(8) infinite;
+        animation: ciclo-animacao 1.0s steps(8) infinite;
+      }
+
+      @-webkit-keyframes ciclo-animacao {
+        from { background-position: 0px; }
+        to { background-position: -464px; }
+      }
+
+      @Keyframes ciclo-animacao {
+        from { background-position: 0px; }
+        to { background-position: -464px; }
+      }
