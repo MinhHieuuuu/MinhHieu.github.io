@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://media.discordapp.net/attachments/1012011940219986001/1097579733765603338/202302.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Animation */
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+.rainbow-text {
+  font-size: 36px;
+  font-weight: bold;
+  animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #f00;
+  }
+  10% {
+    color: #ff0;
+  }
+  20% {
+    color: #0f0;
+  }
+  30% {
+    color: #0ff;
+  }
+  40% {
+    color: #00f;
+  }
+  50% {
+    color: #f0f;
+  }
+  60% {
+    color: #f00;
+  }
+  70% {
+    color: #ff0;
+  }
+  80% {
+    color: #0f0;
+  }
+  90% {
+    color: #0ff;
+  }
+  100% {
+    color: #00f;
+  }
+}
+
+.fade {
+  transition: color 2s;
+  color: #f00;
+}
+
+.rainbow-text:hover {
+  animation: none;
+  animation-fill-mode: forwards;
+  animation-name: fade;
+}
+
+.rainbow-text:hover .fade {
+  color: #0f0;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  display: flex; /* thêm vào đây */
+  flex-direction: column; /* và thêm vào đây */
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0px 10px;
+  font-size: 2rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+.social-icons a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.custom-loader {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  color:#FFD700;
+  -webkit-mask:radial-gradient(circle 2.5px,#0000 90%,#000);
+  animation:sh3 3s infinite linear;
+}
+.custom-loader:before,
+.custom-loader:after {
+  content: "";
+  grid-area: 1/1;
+  background: 
+    radial-gradient(farthest-side at bottom left, currentColor 94%,#0000) top left, 
+    radial-gradient(farthest-side at top right  , currentColor 94%,#0000) bottom right;
+  background-size: 63% 50%;
+  background-repeat: no-repeat;
+  -webkit-mask: 
+    radial-gradient(65% 110% at bottom left, #0000 94%,#000) top left, 
+    radial-gradient(65% 110% at top   right, #0000 94%,#000) bottom right;
+  -webkit-mask-size: 62% 50%;
+  -webkit-mask-repeat: no-repeat;
+}
+.custom-loader:after {
+  transform: rotate(90deg);
+}
+
+@keyframes sh3 { 
+  100%{transform: rotate(1turn)}
+}
+
+.table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.td {
+  padding: 10px;
+}
