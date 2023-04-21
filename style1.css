@@ -267,3 +267,11 @@ width: 100%;
 letter-spacing: 1px;
 line-height: 1em;
 }
+
+.text{
+display: flex;
+color: white;
+  justify-content: center;
+  align-items:  center;
+
+}
