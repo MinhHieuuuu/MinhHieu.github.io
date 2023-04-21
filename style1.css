@@ -170,6 +170,23 @@ body {
   transform: scale(1.1);
 }
 
+.social-icons3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-icons3 a {
+  display: inline-block;
+  margin: 0px 10px;
+  font-size: 2rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+.social-icons3 a:hover {
+  color: #007bff;
+  transform: scale(1);
+}
+
 #animation1  {
         background-image: url("ciclo-animacao.png");
         transform: scaleX(-1);
