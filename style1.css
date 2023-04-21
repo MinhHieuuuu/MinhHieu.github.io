@@ -173,7 +173,7 @@ body {
 .social-icons3 {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .social-icons3 a {
   display: inline-block;
@@ -226,14 +226,14 @@ body {
  margin: 6% 0 0 38%;
  position: relative;
  width: 20%;
-top: -18%;
-left: -18%;
+top: -21%;
+left: -21%;
 transform: translate(-50%, -50%);
 } 
 
 .image{
 display: block;
-width: 200%;
+width: 250%;
 height: auto;
 }
 
