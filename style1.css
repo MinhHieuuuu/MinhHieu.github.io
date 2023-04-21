@@ -219,10 +219,10 @@ box-shadow: 0 3px 15px rgba(0, 0, 0 ,0.7);
 
 .content p{
 margin: 5px 0 0;
-font-size: 1.2vw;
+font-size: 1.3vw;
 padding: 0.5em 0.5em;
 transform: translateY(1em);
-line-height: 1.3em;
+line-height: 1em;
 transition: 0.3s;
 text-align: justify;
 opacity: 0;
