@@ -273,5 +273,6 @@ display: flex;
 color: white;
   justify-content: center;
   align-items:  center;
- height: 5vh;
+  height: 5vh;
+  max-width: 12vw;
 }
